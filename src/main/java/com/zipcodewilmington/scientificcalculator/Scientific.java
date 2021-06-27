@@ -3,7 +3,7 @@ package com.zipcodewilmington.scientificcalculator;
 import com.sun.codemodel.internal.JSwitch;
 
 public class Scientific {
-    public Scientific
+
     public static void main(String[] args) {
         int firstNum = 0;
         double answer = 0.0;
@@ -55,16 +55,28 @@ public class Scientific {
                 }
                 break;
 
-            case "":
-                answer = math
-                break;
-
             default:
                 System.out.println("ERR");
         }
     }
+
     public void actionPerformed(ActionEvent e) {
         String s = e.getActionCommand();
+        switch (operator) {
+            case "MC":
+                m1 = 0;
+                tfield.setText("");
+                break;
+            case "MR" :
+                tfield.setText("");
+                tfield.setText(tfield.getText() + m1);
+                break;
+            case "M-" :
+                //something I have no clue
+                break;
+                    }
+                }
+        }
 
-    }
-}
+
+
