@@ -6,7 +6,7 @@ import org.junit.Test;
 
 
 
-public class CalculatorEngineTest {
+public class CalculatorInterfacesTest {
 
     @Test
     public void testSum() {
@@ -32,5 +32,29 @@ public class CalculatorEngineTest {
             Assert.fail();
         }
     }
-}
+    @Test
+    public void testSubtract() {
+        // Given
+        Calculator calculator = new Calculator();
+        // When
+        int result;
+        result = calculator.subtract(10, 5);
+        // Then
+        if (result != 5) {   // 10 - 5 = 5
+            Assert.fail();
+        }
+    }
+    @Test
+    public void testSubtract1() {
+            // Given
+            Calculator calculator = new Calculator();
+            // When
+            int result;
+            result = calculator.subtract(20, 3);
+            // Then
+            if (result != 17) {   // 20 - 3 = 17
+                Assert.fail();
+            }
+        }
+    }
 

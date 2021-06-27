@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by leon on 2/9/18.
  */
-public class MainApplication {
+public class CalculatorInterface {
     public static void main(String[] args) {
 
         Integer y = 0;
@@ -13,9 +13,8 @@ public class MainApplication {
 
         Scanner scanObject = new Scanner(System.in);
 
-        Console.println("Welcome to my calculator!");
-
-    // Connected the sum method
+        CalculatorEngine.println("Welcome to the calculator!\nWhat would you like to do?");
+        System.out.println("1. Basic Functions \n2. Scientific Functions \n3. Something Fun!");
 
         System.out.println("Please enter a number");
 
@@ -23,7 +22,7 @@ public class MainApplication {
         scanObject.nextLine();
 
        // System.out.println(y);
-
+        // Connected the sum method
         System.out.println("Please enter another number");
         z = scanObject.nextInt();
        // scanObject.nextLine();
@@ -33,14 +32,14 @@ public class MainApplication {
         System.out.println(x);
 
 
-        String s = Console.getStringInput("Enter a string");
+        String s = CalculatorEngine.getStringInput("Enter a string");
 
 
 
-        Double d = Console.getDoubleInput("Enter a double.");
+        Double d = CalculatorEngine.getDoubleInput("Enter a double.");
 
-        Console.println("The user input %s as a string", s);
+        CalculatorEngine.println("The user input %s as a string", s);
         // Console.println("The user input %s as a integer", i);
-        Console.println("The user input %s as a d", d);
+        CalculatorEngine.println("The user input %s as a d", d);
     }
 }
