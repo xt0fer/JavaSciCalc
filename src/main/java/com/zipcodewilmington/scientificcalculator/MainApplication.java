@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by leon on 2/9/18.
  */
-public class CalculatorInterface {
+public class MainApplication {
 
     static Integer y = 0;
     static Integer z = 0;
@@ -16,15 +16,17 @@ public class CalculatorInterface {
 
         Scanner scanObject = new Scanner(System.in);
 
-        CalculatorEngine.println("Welcome to the calculator!\nWhat would you like to do?");
+        Console.println("Welcome to the calculator!\nWhat would you like to do?");
         System.out.println("1. Basic Functions \n2. Scientific Functions \n3. Something Fun!");
+        menuOption1();
+    }
 
-
-        public String menuOption1(String prompt) {
-        }
-            switch (prompt) {
+        public static String menuOption1() {
+            String prompt;
+            prompt = Console.getStringInput("1, 2, 3");
+            switch () {
                 case "1":
-                    System.out.println("Here are some Basic Functions. \n+ \nAddition , - \n-Subtraction , / \n-Division , * \n-Multiplication";
+                    System.out.println("Here are some Basic Functions. \n+ \nAddition , - \n-Subtraction , / \n-Division , * \n-Multiplication");
                     break;
                 case "2":
                     System.out.println("Here are some Scientific Functions. \nSine() \nCosine()");
@@ -32,8 +34,12 @@ public class CalculatorInterface {
                 case "3":
                     System.out.println("Something Fun!");
                     break;
+                default:
+                    Console.println("[ %s ] is not a valid input!", prompt);
+                    break;
             }
 
+/*
 
         System.out.println("Please enter a number");
 
@@ -49,16 +55,16 @@ public class CalculatorInterface {
         System.out.println("Adding now...");
         int x = Calculator.sum(y, z);
         System.out.println(x);
+*/
+
+        String s = Console.getStringInput("Enter a string");
 
 
-        String s = CalculatorEngine.getStringInput("Enter a string");
 
+        Double d = Console.getDoubleInput("Enter a double.");
 
-
-        Double d = CalculatorEngine.getDoubleInput("Enter a double.");
-
-        CalculatorEngine.println("The user input %s as a string", s);
+        Console.println("The user input %s as a string", s);
         // Console.println("The user input %s as a integer", i);
-        CalculatorEngine.println("The user input %s as a d", d);
+        Console.println("The user input %s as a d", d);
     }
 }
