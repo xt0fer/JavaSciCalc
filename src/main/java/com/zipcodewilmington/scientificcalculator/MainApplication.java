@@ -29,7 +29,7 @@ public class MainApplication {
                     System.out.println("Here are some Basic Functions. \n+ \nAddition , - \n-Subtraction , / \n-Division , * \n-Multiplication");
                     break;
                 case "2":
-                    System.out.println("Here are some Scientific Functions. \nSine() \nCosine()");
+                    System.out.println("Here are some Scientific Functions. \nSine() \nCosine() \nTangant");
                     break;
                 case "3":
                     System.out.println("Something Fun!");
@@ -57,13 +57,13 @@ public class MainApplication {
         System.out.println(x);
 */
 
-<<<<<<< HEAD:src/main/java/com/zipcodewilmington/scientificcalculator/MainApplication.java
+//<<<<<<< HEAD:src/main/java/com/zipcodewilmington/scientificcalculator/MainApplication.java
         String s = Console.getStringInput("Enter a string");
 =======
         String
 
         String s = CalculatorEngine.getStringInput("Enter a string");
->>>>>>> 67032e40a3e1b20aaf10917261cc55a57dbfe45b:src/main/java/com/zipcodewilmington/scientificcalculator/CalculatorInterface.java
+//>>>>>>> 67032e40a3e1b20aaf10917261cc55a57dbfe45b:src/main/java/com/zipcodewilmington/scientificcalculator/CalculatorInterface.java
 
 
 
