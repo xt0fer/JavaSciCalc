@@ -1,13 +1,14 @@
 package com.zipcodewilmington.scientificcalculator;
 
 import com.sun.codemodel.internal.JSwitch;
-
+/*
 public class Scientific {
 
     public static void main(String[] args) {
         int firstNum = 0;
         double answer = 0.0;
         char operator = 0;
+
 
         switch (operator) {
             case "cos":
@@ -81,3 +82,10 @@ public class Scientific {
                 }
 
 }
+=======
+        switch (operator)(
+                case "cos":
+            )
+}
+*/
+
