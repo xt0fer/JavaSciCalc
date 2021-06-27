@@ -3,7 +3,8 @@ package com.zipcodewilmington.scientificcalculator;
 import com.sun.codemodel.internal.JSwitch;
 
 public class Scientific {
-    public static void main java.lang.String {
+    public Scientific
+    public static void main(String[] args) {
         int firstNum = 0;
         double answer = 0.0;
         char operator = 0;
@@ -35,9 +36,9 @@ public class Scientific {
             default:
                 System.out.println("ERR");
         }
-        switch (operator){
+        switch (operator) {
             case "x2":
-                answer= Math.pow(firstNum, 2);
+                answer = Math.pow(firstNum, 2);
                 break;
             case "x^":
                 answer = Math.sqrt(firstNum);
@@ -50,26 +51,20 @@ public class Scientific {
             case "!x":
                 long fact = 1;
                 for (int i = 2; i <= firstNum; i++) {
-                    answer = fact * i;}
-                System.out.println("true");
+                    answer = fact * i;
+                }
                 break;
 
             case "":
-                answer = Math.fact(firstNum);
+                answer = math
                 break;
 
             default:
                 System.out.println("ERR");
         }
     }
-    public static void long factorial(int n) {
-        long answer = 1;
-        for (int i = 2; i <= n; i++) {
-            answer = answer * i;
-        }
-        return answer;
+    public void actionPerformed(ActionEvent e) {
+        String s = e.getActionCommand();
+
     }
-
-
-
 }
