@@ -36,6 +36,7 @@ public class Scientific {
             default:
                 System.out.println("ERR");
         }
+
         switch (operator) {
             case "x2":
                 answer = Math.pow(firstNum, 2);
@@ -58,6 +59,7 @@ public class Scientific {
             default:
                 System.out.println("ERR");
         }
+        public Integer
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -74,9 +76,8 @@ public class Scientific {
             case "M-" :
                 //something I have no clue
                 break;
+
                     }
                 }
-        }
 
-
-
+}
