@@ -1,5 +1,7 @@
+package com.zipcodewilmington.scientificcalculator;
+
 public class Calculator {
-    public int sum(int firstNum, int secondNum) {
+    public static int sum(int firstNum, int secondNum) {
         int result;
         result = firstNum + secondNum;
         return result;
