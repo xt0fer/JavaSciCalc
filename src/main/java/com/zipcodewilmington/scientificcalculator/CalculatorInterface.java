@@ -6,15 +6,34 @@ import java.util.Scanner;
  * Created by leon on 2/9/18.
  */
 public class CalculatorInterface {
-    public static void main(String[] args) {
 
-        Integer y = 0;
-        Integer z = 0;
+    static Integer y = 0;
+    static Integer z = 0;
+    private static String prompt;
+
+
+    public static void main(String[] args) {
 
         Scanner scanObject = new Scanner(System.in);
 
         CalculatorEngine.println("Welcome to the calculator!\nWhat would you like to do?");
         System.out.println("1. Basic Functions \n2. Scientific Functions \n3. Something Fun!");
+
+
+        public String menuOption1(String prompt) {
+        }
+            switch (prompt) {
+                case "1":
+                    System.out.println("Here are some Basic Functions. \n+ \nAddition , - \n-Subtraction , / \n-Division , * \n-Multiplication";
+                    break;
+                case "2":
+                    System.out.println("Here are some Scientific Functions. \nSine() \nCosine()");
+                    break;
+                case "3":
+                    System.out.println("Something Fun!");
+                    break;
+            }
+
 
         System.out.println("Please enter a number");
 
