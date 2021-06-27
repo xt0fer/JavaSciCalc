@@ -52,32 +52,18 @@ public class Scientific {
             case "!x":
                 long fact = 1;
                 for (int i = 2; i <= firstNum; i++) {
-                    answer = fact * i;
-                }
+                    answer = fact * i;}
                 break;
-
             default:
                 System.out.println("ERR");
         }
-        public Integer
-    }
+        public Integer {
 
-    public void actionPerformed(ActionEvent e) {
-        String s = e.getActionCommand();
-        switch (operator) {
-            case "MC":
-                m1 = 0;
-                tfield.setText("");
-                break;
-            case "MR" :
-                tfield.setText("");
-                tfield.setText(tfield.getText() + m1);
-                break;
-            case "M-" :
-                //something I have no clue
-                break;
+            switch {
+
+
 
                     }
-                }
+        }
 
 }

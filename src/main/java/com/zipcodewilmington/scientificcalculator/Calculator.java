@@ -15,5 +15,5 @@ public class Calculator {
         return result;
     }
 
->>>>>>> 67032e40a3e1b20aaf10917261cc55a57dbfe45b
+//>>>>>>> 67032e40a3e1b20aaf10917261cc55a57dbfe45b
 }
