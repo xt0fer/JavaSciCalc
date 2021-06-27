@@ -12,4 +12,5 @@ public class Calculator {
         result = firstNum - secondNum;
         return result;
     }
+
 }
