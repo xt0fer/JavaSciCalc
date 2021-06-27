@@ -15,10 +15,18 @@ public class MainApplication {
 
         Console.println("Welcome to my calculator!");
 
-        Integer i = Console.getIntegerInput("Please enter two numbers");
+    // Connected the sum method
+
+        System.out.println("Please enter a number");
 
         y = scanObject.nextInt();
+        scanObject.nextLine();
+
+       // System.out.println(y);
+
+        System.out.println("Please enter another number");
         z = scanObject.nextInt();
+       // scanObject.nextLine();
 
         System.out.println("Adding now...");
         int x = Calculator.sum(y, z);
@@ -32,7 +40,7 @@ public class MainApplication {
         Double d = Console.getDoubleInput("Enter a double.");
 
         Console.println("The user input %s as a string", s);
-        Console.println("The user input %s as a integer", i);
+        // Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
     }
 }
