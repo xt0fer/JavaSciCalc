@@ -9,9 +9,9 @@ public class ScientificTest {
     @Test
     public void testTan() {
         Scientific scientific = new Scientific();
-        Double result;
-        result = scientific.tan(0.87144798272);
-        if (result != Math.tan(7))
+        Double value;
+        value = scientific.tan(7);
+        if (value == 0.122784560)
         {   //
             Assert.fail();
         }
@@ -21,7 +21,7 @@ public class ScientificTest {
         Scientific scientific = new Scientific();
         Double value;
         value = scientific.tanR(0.10955952677);
-        if (value != Math.atan(.11))
+        if (value == Math.atan(.11))
         {   //
             Assert.fail();
         }
@@ -31,7 +31,7 @@ public class ScientificTest {
         Scientific scientific = new Scientific();
         Double value;
         value = scientific.cos(-0.4480736161291702);
-        if (value != Math.cos(90.0)){
+        if (value == Math.cos(90.0)){
             Assert.fail();
         }
     }
@@ -39,8 +39,8 @@ public class ScientificTest {
     public void testCosR(){
         Scientific scientific = new Scientific();
         Double value;
-        value = scientific.cos(-1.99);
-        if (value != Math.acos(1.0)){
+        value = scientific.cos(1.0);
+        if (value == Math.acos(-1.99)){
             Assert.fail();
         }
     }

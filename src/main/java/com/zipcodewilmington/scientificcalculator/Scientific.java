@@ -140,8 +140,18 @@ public class Scientific {
             if (Math.round(to180) == 57) {
                 return true;
             } else {
+<<<<<<< HEAD
             }
             return false;
         }
         */
+
+/*=======
+            }return false;
+
+
+        }
+    }
+}
+*/
 

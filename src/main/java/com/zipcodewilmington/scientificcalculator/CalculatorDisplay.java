@@ -4,6 +4,7 @@ public class CalculatorDisplay {
 
     public static void menuOption1() {
         String prompt;
+        outerLoop:
         do {
             prompt = Console.getStringInput("");
             switch (prompt.toLowerCase()) {
@@ -14,13 +15,18 @@ public class CalculatorDisplay {
                     System.out.println("Here are some Scientific Functions. \nSine() \nCosine() \nTangent()");
                     break;
                 case "3":
-                    System.out.println("Return to menu? \n ( Y / N?)");
-                            Console.getStringInput("");
+                        String userInput = Console.getStringInput("Time for some math? \n ( Y / N )");
+                            if(userInput.equalsIgnoreCase("Y")) {
+                                break outerLoop;
+                            }
                     break;
                 default:
                     Console.println("[ %s ] is not a valid input!", prompt);
                     break;
             }
         } while (true);
+    }
+    public static void basicOperators(){
+
     }
 }
