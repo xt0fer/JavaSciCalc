@@ -1,7 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorEngine {
-   CalculatorEngine calculatorEngine = new CalculatorEngine();
     private static Double value;
 
     public static Double sum(double firstNum, double secondNum) {
@@ -23,14 +22,14 @@ public class CalculatorEngine {
         return value;
     }
 
-    public Double square(double firstNum){
-        double sr;
-        double Value = firstNum / 2;
+    public Double squareRoot(double firstNum){
+        double s;
+        double value = firstNum / 2;
         do {
-            sr = value;
-            value = (sr +(firstNum / sr)) / 2;
+            s = value;
+            value = (s +(firstNum / s)) / 2;
         }
-        while ((sr - value) != 0);
+        while ((s - value) != 0);
         return value;
     }
 

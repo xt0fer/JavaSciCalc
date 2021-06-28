@@ -100,7 +100,7 @@ public class CalculatorEngineTest {
     public void testSquare1(){
         CalculatorEngine calculatorEngine = new CalculatorEngine();
         Double result;
-        result = calculatorEngine.square(9.00);
+        result = calculatorEngine.squareRoot(9.00);
         if (result != 3.00);{
             Assert.fail();
         }
