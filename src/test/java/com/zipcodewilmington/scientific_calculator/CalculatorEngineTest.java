@@ -11,7 +11,7 @@ public class CalculatorEngineTest {
     @Test
     public void testSum1() {
         // Given
-        CalculatorEngine calculatorEngine = new CalculatorEngine();
+        CalculatorEngine CalculatorEngine = new CalculatorEngine();
         // When
         Double result;
         result = CalculatorEngine.sum(2.00, 2.00);
@@ -23,7 +23,7 @@ public class CalculatorEngineTest {
     @Test
     public void testSum2() {
         // Given
-        CalculatorEngine calculatorEngine = new CalculatorEngine();
+        CalculatorEngine CalculatorEngine = new CalculatorEngine();
         // When
         Double result;
         result = CalculatorEngine.sum(1200.00, 500.00);
