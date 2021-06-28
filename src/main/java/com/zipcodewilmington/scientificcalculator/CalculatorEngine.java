@@ -8,12 +8,12 @@ public class CalculatorEngine {
         value = firstNum + secondNum;
         return value;
     }
-    public Double subtract(Double firstNum, Double secondNum) {
+    public Double subtract(double firstNum, double secondNum) {
         value = firstNum - secondNum;
         return value;
     }
 
-    public Double divide(Double firstNum, Double secondNum) {
+    public Double divide(double firstNum, double secondNum) {
         value = firstNum / secondNum;
         return value;
     }
@@ -22,4 +22,11 @@ public class CalculatorEngine {
         value = firstNum * secondNum;
         return value;
     }
+
+    public Double sqrt(double firstNum){
+        value = Math.sqrt(firstNum);
+        return value;
+
+    }
+
 }

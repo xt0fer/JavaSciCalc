@@ -1,4 +1,4 @@
-/*
+
 package com.zipcodewilmington.scientificcalculator;
 
 import com.sun.codemodel.internal.JSwitch;
