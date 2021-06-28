@@ -1,8 +1,63 @@
-/*
+
 package com.zipcodewilmington.scientificcalculator;
 
 public class Scientific {
+    private static double value;
 
+    public static Double tan (double value) {
+    value = 0;
+    value = Math.tan(value;
+    return value;
+    }
+
+    public Double tanR(double value) {
+        value = 0;
+        value = Math.atan(value);
+        return value;
+    }
+
+
+    public Double cos(double value) {
+        value = 0;
+        value = Math.cos(value);
+        return value;
+    }
+
+    public double sin(double value) {
+        value = 0;
+        value = Math.sin(value);
+    }
+
+    public double cb(double value) {
+        value = 0;
+        value= Math.pow(value, 3);
+    }
+
+    public double sqrt(double value) {
+        value = 0;
+        value = Math.sqrt(value);
+        return value;
+    }
+
+    public double squ(double value) {
+        value = 0;
+        value = Math.pow(value, 2);
+        return value
+    }
+
+
+    public double sinR(double value) {
+        value = 0;
+        value = Math.asin(value);
+        return value;
+    }
+    public double cosR(double value){
+        value = 0;
+        value = Math.acos(value);
+        return value;
+    }
+}
+    /*public double result;
     public static void main(String[] args) {
         int firstNum = 0;
         double value = 0.0;
@@ -77,21 +132,14 @@ public class Scientific {
             default
                 System.out.println("ERR");
         }
-        */public static boolean isRadian ( double input){
+        public static boolean isRadian ( double input){
             double to180 = (input + ((180 / Math.PI) - input));
             // 57 is 180 degrees rounded to whole number
             if (Math.round(to180) == 57) {
                 return true;
             } else {
-            /*}return false;
-
-
+            }
+            return false;
         }
-    }
-}
-//<<<<<<< master
-//=======
-*/
+        */
 
-
-//>>>>>>> master
