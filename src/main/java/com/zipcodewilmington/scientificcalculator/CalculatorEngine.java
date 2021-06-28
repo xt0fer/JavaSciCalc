@@ -34,4 +34,28 @@ public class CalculatorEngine {
     public static Double square(Double firstNum){
         return firstNum * firstNum;
     }
-}
+
+    public static Double squareY(Double firstNum, Double secondNum) {
+ return Math.pow(firstNum, secondNum);
+
+    }
+
+    public static Double squareRootY(Double firstNum, Double secondNum){
+        double xPre = Math.random() % 10;
+        double eps = 0.001;
+        double delX = 2147483647;
+        double xK = 0.00;
+       double A = firstNum;
+       double N = secondNum;
+
+
+        while (delX > eps){
+            xK = ((N - 1.0) * xPre + A / Math.pow(xPre, N - 1)) / N;
+            delX = Math.abs(xK - xPre);
+            xPre = xK;
+        }
+        double value = Math.round(xK * 1000.00) / 1000.00;
+        return value;
+        }
+
+    }

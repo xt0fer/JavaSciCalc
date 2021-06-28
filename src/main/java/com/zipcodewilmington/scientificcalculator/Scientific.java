@@ -1,6 +1,6 @@
 
 package com.zipcodewilmington.scientificcalculator;
-/*
+
 public class Scientific {
 
     public static void main(String[] args) {

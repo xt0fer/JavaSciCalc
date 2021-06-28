@@ -4,6 +4,7 @@ import com.zipcodewilmington.scientificcalculator.CalculatorEngine;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static com.sun.tools.doclint.Entity.divide;
 import static com.zipcodewilmington.scientificcalculator.CalculatorEngine.*;
 
 
@@ -109,6 +110,23 @@ public class CalculatorEngineTest {
      Double firstNum = 4.00;
      Double actual = square(firstNum);
      Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSquareY(){
+        Double expected = 7776.00;
+        Double firstNum = 6.00;
+        Double secondNumb = 5.00;
+        Double actual = CalculatorEngine.squareY(firstNum, secondNumb);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSquareRootY(){
+        Double expected = 1.431;
+        Double firstNum = 6.00;
+        Double secondNumb = 5.00;
+        Double actual = CalculatorEngine.squareRootY(firstNum, secondNumb);
+        Assert.assertEquals(expected, actual);
     }
 }
 
