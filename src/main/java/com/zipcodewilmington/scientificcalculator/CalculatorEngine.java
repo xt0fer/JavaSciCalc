@@ -58,4 +58,12 @@ public class CalculatorEngine {
         return value;
         }
 
+        public static Double inverse(Double firstNum){
+        return 1 / firstNum;
+        }
+
+        public static Double signSwitch(Double firstNum){
+        return firstNum * (-1);
+        }
+
     }
