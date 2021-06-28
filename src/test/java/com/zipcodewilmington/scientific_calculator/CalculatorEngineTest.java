@@ -14,7 +14,7 @@ public class CalculatorEngineTest {
         CalculatorEngine calculatorEngine = new CalculatorEngine();
         // When
         Double result;
-        result = calculatorEngine.sum(2.00, 2.00);
+        result = CalculatorEngine.sum(2.00, 2.00);
         // Then
         if (result != 4.00) {   // if 2 + 2 != 4
             Assert.fail();
@@ -26,7 +26,7 @@ public class CalculatorEngineTest {
         CalculatorEngine calculatorEngine = new CalculatorEngine();
         // When
         Double result;
-        result = calculatorEngine.sum(1200.00, 500.00);
+        result = CalculatorEngine.sum(1200.00, 500.00);
         // Then
         if (result != 1700.00) {   // if 1200 + 500 != 1700
             Assert.fail();
@@ -63,6 +63,7 @@ public class CalculatorEngineTest {
         Double result;
         result = calculatorEngine.divide(6.00, 3.00);
         if (result != 2.00); {
+            Assert.fail();
             }
         }
 
@@ -72,6 +73,7 @@ public class CalculatorEngineTest {
         Double result;
         result = calculatorEngine.divide(33.33, 11.11);
         if (result != 3.00); {
+            Assert.fail();
         }
     }
 
@@ -81,6 +83,7 @@ public class CalculatorEngineTest {
         Double result;
         result = calculatorEngine.multiply(5.00, 20.00);
         if (result != 100.00); {
+            Assert.fail();
         }
     }
 
@@ -90,7 +93,18 @@ public class CalculatorEngineTest {
         Double result;
         result = calculatorEngine.multiply(7.00, 20.00);
         if (result != 140.00); {
+            Assert.fail();
         }
+    }
+    @Test
+    public void testSquare1(){
+        CalculatorEngine calculatorEngine = new CalculatorEngine();
+        Double result;
+        result = calculatorEngine.square(9.00);
+        if (result != 3.00);{
+            Assert.fail();
+        }
+
     }
 }
 

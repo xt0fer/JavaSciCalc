@@ -23,10 +23,15 @@ public class CalculatorEngine {
         return value;
     }
 
-    public Double sqrt(double firstNum){
-        value = Math.sqrt(firstNum);
+    public Double square(double firstNum){
+        double sr;
+        double Value = firstNum / 2;
+        do {
+            sr = value;
+            value = (sr +(firstNum / sr)) / 2;
+        }
+        while ((sr - value) != 0);
         return value;
-
     }
 
 }
