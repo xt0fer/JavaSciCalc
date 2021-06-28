@@ -33,6 +33,9 @@ public class Console {
     }
 
     public static Double getDoubleInput(String prompt) {
-        return null;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(prompt);
+        Double userInput = scanner.nextDouble();
+        return userInput;
     }
 }
