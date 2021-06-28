@@ -10,7 +10,6 @@ public class Console {
     public static void print(String output, Object... args) {
         System.out.printf(output, args);
     }
-
     public static void println(String output, Object... args) {
         print(output + "\n", args);
     }
@@ -23,10 +22,16 @@ public class Console {
     }
 
     public static Integer getIntegerInput(String prompt) {
-        return null;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(prompt);
+        Integer userInput = scanner.nextInt();
+        return userInput;
     }
 
     public static Double getDoubleInput(String prompt) {
-        return null;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(prompt);
+        Double userInput = scanner.nextDouble();
+        return userInput;
     }
 }
