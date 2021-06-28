@@ -6,7 +6,7 @@ public class Scientific {
 
     public static Double tan (double value) {
     value = 0;
-    value = Math.tan(value;
+    value = Math.tan(value);
     return value;
     }
 
@@ -26,11 +26,13 @@ public class Scientific {
     public double sin(double value) {
         value = 0;
         value = Math.sin(value);
+        return value;
     }
 
     public double cb(double value) {
         value = 0;
         value= Math.pow(value, 3);
+        return value;
     }
 
     public double sqrt(double value) {
@@ -42,7 +44,7 @@ public class Scientific {
     public double squ(double value) {
         value = 0;
         value = Math.pow(value, 2);
-        return value
+        return value;
     }
 
 
