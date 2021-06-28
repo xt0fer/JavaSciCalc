@@ -4,26 +4,23 @@ public class CalculatorEngine {
    // CalculatorEngine calculatorEngine = new CalculatorEngine();
     private static Double value;
 
-    public static Double sum(Double firstNum, Double secondNum) {
-        value = firstNum + secondNum;
-        return value;
+    public  Double sum(Double firstNum, Double secondNum) {
+        return firstNum + secondNum;
     }
+
     public Double subtract(Double firstNum, Double secondNum) {
-        value = firstNum - secondNum;
-        return value;
+              return firstNum - secondNum;
     }
 
-    public Double divide(Double firstNum, Double secondNum) {
-        value = firstNum / secondNum;
-        return value;
+    public static Double divide(Double firstNum, Double secondNum) {
+        return firstNum / secondNum;
     }
 
-    public Double multiply(Double firstNum, Double secondNum) {
-        value = firstNum * secondNum;
-        return value;
+    public static Double multiply(Double firstNum, Double secondNum) {
+        return firstNum * secondNum;
     }
 
-    public Double squareRoot(Double firstNum){
+    public static Double squareRoot(Double firstNum){
         double s;
         double value = firstNum / 2;
         do {
@@ -34,4 +31,7 @@ public class CalculatorEngine {
         return value;
     }
 
+    public static Double square(Double firstNum){
+        return firstNum * firstNum;
+    }
 }
