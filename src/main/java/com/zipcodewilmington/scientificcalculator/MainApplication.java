@@ -7,19 +7,12 @@ import java.util.Scanner;
  */
 public class MainApplication {
 
-    static Integer y = 0;
-    static Integer z = 0;
-    private static String prompt;
-
-
     public static void main(String[] args) {
-
-        Scanner scanObject = new Scanner(System.in);
-
-        Console.println("Welcome to the calculator!\nWhat would you like to do?");
-        System.out.println("1. Basic Functions \n2. Scientific Functions \n3. Something Fun!");
-        menuOption1();
+        public class Console =
+        CalculatorEngine  = new CalculatorEngine();
     }
+}
+
 
         public static String menuOption1() {
             String prompt;
@@ -39,6 +32,7 @@ public class MainApplication {
                     break;
             }
 
+
 /*
 
         System.out.println("Please enter a number");
@@ -55,22 +49,16 @@ public class MainApplication {
         System.out.println("Adding now...");
         int x = Calculator.sum(y, z);
         System.out.println(x);
-*/
 
-//<<<<<<< HEAD:src/main/java/com/zipcodewilmington/scientificcalculator/MainApplication.java
+
         String s = Console.getStringInput("Enter a string");
-=======
-        String
-
+        String s = Console.getStringInput("Enter a string");
         String s = CalculatorEngine.getStringInput("Enter a string");
-//>>>>>>> 67032e40a3e1b20aaf10917261cc55a57dbfe45b:src/main/java/com/zipcodewilmington/scientificcalculator/CalculatorInterface.java
-
-
 
         Double d = Console.getDoubleInput("Enter a double.");
 
         Console.println("The user input %s as a string", s);
         // Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
-    }
-}
+    } */
+
