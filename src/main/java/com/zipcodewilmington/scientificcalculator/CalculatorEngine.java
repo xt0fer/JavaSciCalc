@@ -1,7 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorEngine {
-   CalculatorEngine calculatorEngine = new CalculatorEngine();
+   // CalculatorEngine calculatorEngine = new CalculatorEngine();
     private static Double value;
 
     public static Double sum(double firstNum, double secondNum) {
