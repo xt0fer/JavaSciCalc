@@ -4,7 +4,7 @@ public class CalculatorEngine {
    // CalculatorEngine calculatorEngine = new CalculatorEngine();
     private static Double value;
 
-    public  Double sum(Double firstNum, Double secondNum) {
+    public static Double sum(Double firstNum, Double secondNum) {
         return firstNum + secondNum;
     }
 
