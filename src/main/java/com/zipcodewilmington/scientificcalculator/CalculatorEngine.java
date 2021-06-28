@@ -1,28 +1,29 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorEngine {
+   // CalculatorEngine calculatorEngine = new CalculatorEngine();
     private static Double value;
 
-    public static Double sum(double firstNum, double secondNum) {
+    public static Double sum(Double firstNum, Double secondNum) {
         value = firstNum + secondNum;
         return value;
     }
-    public Double subtract(double firstNum, double secondNum) {
+    public Double subtract(Double firstNum, Double secondNum) {
         value = firstNum - secondNum;
         return value;
     }
 
-    public Double divide(double firstNum, double secondNum) {
+    public Double divide(Double firstNum, Double secondNum) {
         value = firstNum / secondNum;
         return value;
     }
 
-    public Double multiply(double firstNum, double secondNum) {
+    public Double multiply(Double firstNum, Double secondNum) {
         value = firstNum * secondNum;
         return value;
     }
 
-    public Double squareRoot(double firstNum){
+    public Double squareRoot(Double firstNum){
         double s;
         double value = firstNum / 2;
         do {

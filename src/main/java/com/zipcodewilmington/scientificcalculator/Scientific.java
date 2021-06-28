@@ -1,8 +1,6 @@
 
 package com.zipcodewilmington.scientificcalculator;
 
-import com.sun.codemodel.internal.JSwitch;
-
 public class Scientific {
 
     public static void main(String[] args) {
@@ -53,10 +51,12 @@ public class Scientific {
             case "!x":
                 long fact = 1;
                 for (int i = 2; i <= firstNum; i++) {
-                    value = fact * i;}
+                    value = fact * i;
+                }
                 break;
             default:
-                System.out.println("ERR");}
+                System.out.println("ERR");
+        }
 
         switch (operator) {
             case ".log":
@@ -74,23 +74,24 @@ public class Scientific {
             case "Ln":
                 value = Math.log(firstNum);
                 break;
-
             default
-                System.out.println("ERR");}
-        public Double (value){
-            if (Math.toRadians(value))
-
-
-
-
-
+                System.out.println("ERR");
+        }
+        */public static boolean isRadian ( double input){
+            double to180 = (input + ((180 / Math.PI) - input));
+            // 57 is 180 degrees rounded to whole number
+            if (Math.round(to180) == 57) {
+                return true;
+            } else {
+            /*}return false;
 
 
         }
-
     }
-
 }
+//<<<<<<< master
+//=======
+*/
 
 
-
+//>>>>>>> master
