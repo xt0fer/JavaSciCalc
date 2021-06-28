@@ -1,6 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class CalculatorDisplay {
+
     public static void menuOption1() {
         System.out.println("What would you like to do?");
          String prompt;
@@ -22,4 +23,3 @@ public class CalculatorDisplay {
                 }
             } while (true);
     }
-}
