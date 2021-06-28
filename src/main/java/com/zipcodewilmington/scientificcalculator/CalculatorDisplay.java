@@ -15,10 +15,10 @@ public class CalculatorDisplay {
                     System.out.println("Here are some Scientific Functions. \nSine() \nCosine() \nTangent()");
                     break;
                 case "3":
-                        String userInput = Console.getStringInput("Time for some math? \n ( Y / N )");
-                            if(userInput.equalsIgnoreCase("Y")) {
-                                break outerLoop;
-                            }
+                    String userInput = Console.getStringInput("Time for some math? \n ( Y / N )");
+                    if (userInput.equalsIgnoreCase("Y")) {
+                        break outerLoop;
+                    }
                     break;
                 default:
                     Console.println("[ %s ] is not a valid input!", prompt);
