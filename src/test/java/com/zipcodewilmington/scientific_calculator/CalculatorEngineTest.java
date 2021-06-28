@@ -128,6 +128,19 @@ public class CalculatorEngineTest {
         Double actual = CalculatorEngine.squareRootY(firstNum, secondNumb);
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testInverse(){
+        Double expected = 0.125;
+        Double firstNum = 8.00;
+        Double actual = CalculatorEngine.inverse(firstNum);
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public  void testSignSwitch(){
+        Double expected = (-6.00);
+        Double firstNum = (6.00);
+        Double actual = CalculatorEngine.signSwitch(firstNum);
+    }
 }
 
 
