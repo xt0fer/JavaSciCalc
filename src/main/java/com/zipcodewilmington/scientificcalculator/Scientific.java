@@ -10,50 +10,50 @@ public class Scientific {
     return value;
     }
 
-    public Double tanR(double value) {
+    public static Double tanR(double value) {
         value = 0;
         value = Math.atan(value);
         return value;
     }
 
 
-    public Double cos(double value) {
+    public static Double cos(double value) {
         value = 0;
         value = Math.cos(value);
         return value;
     }
 
-    public double sin(double value) {
+    public static double sin(double value) {
         value = 0;
         value = Math.sin(value);
         return value;
     }
 
-    public double cb(double value) {
+    public static double cb(double value) {
         value = 0;
         value= Math.pow(value, 3);
         return value;
     }
 
-    public double sqrt(double value) {
+    public static double sqrt(double value) {
         value = 0;
         value = Math.sqrt(value);
         return value;
     }
 
-    public double squ(double value) {
+    public static double squ(double value) {
         value = 0;
         value = Math.pow(value, 2);
         return value;
     }
 
 
-    public double sinR(double value) {
+    public static double sinR(double value) {
         value = 0;
         value = Math.asin(value);
         return value;
     }
-    public double cosR(double value){
+    public static double cosR(double value){
         value = 0;
         value = Math.acos(value);
         return value;
