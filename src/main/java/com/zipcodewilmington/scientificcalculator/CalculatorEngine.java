@@ -8,17 +8,17 @@ public class CalculatorEngine {
         value = firstNum + secondNum;
         return value;
     }
-    public Double subtract(Double firstNum, Double secondNum) {
+    public static Double subtract(Double firstNum, Double secondNum) {
         value = firstNum - secondNum;
         return value;
     }
 
-    public Double divide(Double firstNum, Double secondNum) {
+    public static Double divide(Double firstNum, Double secondNum) {
         value = firstNum / secondNum;
         return value;
     }
 
-    public Double multiply(Double firstNum, Double secondNum) {
+    public static Double multiply(Double firstNum, Double secondNum) {
         value = firstNum * secondNum;
         return value;
     }
