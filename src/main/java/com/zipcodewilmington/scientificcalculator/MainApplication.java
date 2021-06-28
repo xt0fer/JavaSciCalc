@@ -10,19 +10,17 @@ public class MainApplication {
   private CalculatorDisplay display = new CalculatorDisplay();
 
     public static void main(String[] args) {
-      System.out.println("Welcome! \nWhat would you like to do?");
-      System.out.println("1. Basic Functions \n2. Scientific Functions \n3. Return to Menu");
+      System.out.println("Welcome! \nTake a look at some of our functions!");
+      System.out.println("(1) Basic Functions \n(2) Scientific Functions \n(3) Math time!");
       CalculatorDisplay.menuOption1();
 
 
-      // String s = Console.getStringInput("Enter a string");
       String s = Console.getStringInput("Enter a string");
-      // String s = Console.getStringInput("Enter a string");
-      // String s = CalculatorEngine.getStringInput("Enter a string");
+      Integer i = Console.getIntegerInput("Enter an integer");
       Double d = Console.getDoubleInput("Enter a double.");
       Console.println("The user input %s as a string", s);
-      // Console.println("The user input %s as a integer", i);
-      Console.println("The user input %s as a d", d);
+      Console.println("The user input %s as a integer", i);
+      Console.println("The user input %s as a double", d);
 
 
     }
