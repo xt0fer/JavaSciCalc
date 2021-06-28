@@ -25,17 +25,8 @@ public class CalculatorDisplay {
                     break;
             }
         } while (true);
-
-        System.out.println("Please choose an operator ( +, - , / , * )");
-        String operator = Console.getStringInput("");
-        Console.println("You entered %s\n", operator);
-        System.out.println("Enter your first number");
-        Double firstNum = Console.getDoubleInput("");
-        Console.println("%s", firstNum);
-        System.out.println("Enter your second number");
-        Double secondNum = Console.getDoubleInput("");
-        Console.println("%s", secondNum);
-
+    }
+    public static void basicOperators(){
 
     }
 }

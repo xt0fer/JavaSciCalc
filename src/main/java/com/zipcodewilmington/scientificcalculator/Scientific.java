@@ -1,4 +1,4 @@
-
+/*
 package com.zipcodewilmington.scientificcalculator;
 
 public class Scientific {
@@ -77,14 +77,13 @@ public class Scientific {
             default
                 System.out.println("ERR");
         }
-        /* public static boolean isRadian( double input){
+        public static boolean isRadian ( double input){
             double to180 = (input + ((180 / Math.PI) - input));
             // 57 is 180 degrees rounded to whole number
             if (Math.round(to180) == 57) {
                 return true;
             } else {
-        return false;
-               }
+            }return false;
 
 
         }

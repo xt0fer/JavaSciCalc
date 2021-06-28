@@ -8,7 +8,7 @@ public class CalculatorEngine {
         return firstNum + secondNum;
     }
 
-    public Double subtract(Double firstNum, Double secondNum) {
+    public static Double subtract(Double firstNum, Double secondNum) {
               return firstNum - secondNum;
     }
 
